@@ -1,113 +1,200 @@
-Customer Churn Prediction using Machine Learning
-Overview
+# 🚀 Customer Churn Prediction using Machine Learning
 
-This project predicts whether a telecom customer is likely to churn based on customer demographics, account information, and subscribed services. It applies machine learning techniques to preprocess the data, handle class imbalance, train multiple classification models, and evaluate their performance.
+Predict customer churn using Machine Learning algorithms to help businesses identify customers who are likely to discontinue their services.
 
-The goal is to help businesses identify customers who are at risk of leaving, enabling them to take proactive retention measures.
+---
 
-Features
-Data preprocessing and cleaning
-Exploratory Data Analysis (EDA)
-Label Encoding for categorical variables
-Handling class imbalance using SMOTE
-Training multiple machine learning models
-Model evaluation and comparison
-Customer churn prediction
-Saving and loading trained models using Pickle
-Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-XGBoost
-Imbalanced-learn (SMOTE)
-Pickle
-Machine Learning Models
+## 📖 Overview
 
-The following models were trained and evaluated:
+Customer retention is one of the biggest challenges for subscription-based businesses. This project builds a machine learning model that predicts whether a customer is likely to churn based on demographic information, account details, and subscribed services.
 
-Decision Tree Classifier
-Random Forest Classifier
-XGBoost Classifier
+The project includes data preprocessing, exploratory data analysis, handling class imbalance with SMOTE, training multiple machine learning models, and selecting the best-performing model for prediction.
 
-After comparing the models, Random Forest was selected as the final model because it achieved the best performance.
+---
 
-Dataset
+## ✨ Features
 
-Dataset: Telco Customer Churn Dataset
+* 📊 Exploratory Data Analysis (EDA)
+* 🧹 Data Cleaning & Preprocessing
+* 🔄 Label Encoding for Categorical Features
+* ⚖️ Handling Class Imbalance using SMOTE
+* 🌳 Decision Tree Classifier
+* 🌲 Random Forest Classifier
+* ⚡ XGBoost Classifier
+* 📈 Model Performance Evaluation
+* 💾 Save & Load Trained Model using Pickle
+* 🔮 Predict Customer Churn for New Customers
 
-The dataset contains customer information such as:
+---
 
-Gender
-Senior Citizen
-Partner
-Dependents
-Tenure
-Phone Service
-Internet Service
-Contract Type
-Payment Method
-Monthly Charges
-Total Charges
+## 🛠️ Technologies Used
 
-Target Variable:
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* XGBoost
+* Imbalanced-learn (SMOTE)
+* Pickle
 
-Churn (Yes / No)
-Project Workflow
-Import required libraries
-Load the dataset
-Data cleaning and preprocessing
-Exploratory Data Analysis (EDA)
-Encode categorical features
-Handle class imbalance using SMOTE
-Split the dataset into training and testing sets
-Train multiple machine learning models
-Evaluate model performance
-Save the trained model
-Predict customer churn for new data
-Installation
+---
 
-Clone the repository:
+## 📂 Dataset
 
-git clone https://github.com/your-username/Customer-Churn-Prediction-ML.git
+**Dataset:** Telco Customer Churn Dataset
 
-Navigate to the project folder:
+### Features
 
-cd Customer-Churn-Prediction-ML
+* Gender
+* Senior Citizen
+* Partner
+* Dependents
+* Tenure
+* Phone Service
+* Multiple Lines
+* Internet Service
+* Online Security
+* Online Backup
+* Device Protection
+* Tech Support
+* Streaming TV
+* Streaming Movies
+* Contract
+* Paperless Billing
+* Payment Method
+* Monthly Charges
+* Total Charges
 
-Install the required dependencies:
+**Target Variable**
 
-pip install -r requirements.txt
+* Churn (Yes / No)
 
-Run the project:
+---
 
-python customer_churn_prediction_using_ml.py
-Project Structure
+## 🤖 Machine Learning Models
+
+The following models were trained and compared:
+
+* Decision Tree Classifier
+* Random Forest Classifier
+* XGBoost Classifier
+
+After evaluating all models, the **Random Forest Classifier** was selected as the final model due to its superior performance.
+
+---
+
+## 📁 Project Structure
+
+```text
 Customer-Churn-Prediction-ML/
-│── customer_churn_prediction_using_ml.py
-│── customer_churn_model.pkl
-│── encoders.pkl
-│── requirements.txt
-│── README.md
-│── LICENSE
-│── .gitignore
-Future Improvements
-Develop a Streamlit web application
-Hyperparameter tuning
-Feature engineering
-Model explainability using SHAP
-Cloud deployment
-Docker support
-Author
+│
+├── customer_churn_prediction_using_ml.py
+├── customer_churn_model.pkl
+├── encoders.pkl
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .gitignore
+└── dataset/
+    └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+```
 
-Ayesha Saddiqa
+---
 
-MS Computer Science
+## ⚙️ Installation
 
-Lecturer | Machine Learning Enthusiast
+### Clone the Repository
 
-License
+```bash
+git clone https://github.com/AyeshaSaddiqa/Customer-Churn-Prediction-ML.git
+```
 
-This project is licensed under the MIT License.
+### Navigate to the Project Directory
+
+```bash
+cd Customer-Churn-Prediction-ML
+```
+
+### Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python customer_churn_prediction_using_ml.py
+```
+
+---
+
+## 📊 Project Workflow
+
+1. Import Libraries
+2. Load Dataset
+3. Data Cleaning
+4. Exploratory Data Analysis
+5. Feature Encoding
+6. Handle Class Imbalance using SMOTE
+7. Train-Test Split
+8. Model Training
+9. Model Evaluation
+10. Save the Trained Model
+11. Predict Customer Churn
+
+---
+
+## 📈 Model Evaluation
+
+The models were evaluated using:
+
+* Accuracy Score
+* Confusion Matrix
+* Classification Report
+* Cross Validation
+
+The **Random Forest** model achieved the best overall performance and was selected for final predictions.
+
+---
+
+## 🔮 Future Improvements
+
+* Develop a Streamlit Web Application
+* Hyperparameter Optimization
+* Feature Engineering
+* SHAP Model Explainability
+* Docker Deployment
+* Cloud Deployment (AWS, Azure, or Google Cloud)
+* REST API using Flask or FastAPI
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repository, improve the project, and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👩‍💻 Author
+
+**Ayesha Saddiqa**
+
+**MS Computer Science**
+
+Lecturer | Machine Learning & AI Enthusiast
+
+---
+
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
+
