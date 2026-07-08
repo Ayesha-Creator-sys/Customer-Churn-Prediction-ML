@@ -196,5 +196,4 @@ Lecturer | Machine Learning & AI Enthusiast
 
 ---
 
-⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
 
